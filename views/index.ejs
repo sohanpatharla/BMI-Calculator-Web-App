@@ -1,0 +1,31 @@
+<%-include('partials/header')-%>
+
+<div class="container" align="center">
+    <h1>BMI Calculator</h1>
+    <form action="/calculate" method="post">
+        <label for="weight"><h5>Enter Weight(in kg):</h5></label>
+        <input type="number" name="weight" id="weight" required>
+        <br>
+        <br>
+        <label for="height"><h5>Enter Height(in cms):</h5></label>
+        <input type="number" name="height" id="height" required>
+        <br>
+        <button type="submit">Submit</button>
+
+    </form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%-include('partials/footer')-%>
