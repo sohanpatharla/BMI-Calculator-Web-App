@@ -1,6 +1,6 @@
 <%-include('partials/header')-%>
 
-<div class="container" align="center">
+<div class="container" align="center"`  `   `   `   `   ``  1`  >
     <h1>BMI Calculator</h1>
     <form action="/calculate" method="post">
         <label for="weight"><h5>Enter Weight(in kg):</h5></label>
@@ -11,8 +11,13 @@
         <input type="number" name="height" id="height" required>
         <br>
         <button type="submit">Submit</button>
-
     </form>
+    <% if (bmiResult) { %>
+        <div class="result">
+            <p>Your BMI is: <%= bmiResult.toFixed(2) %></p>
+            <p><%= bmiCategory %></p>
+        </div>
+    <% } %>
 
 </div>
 
